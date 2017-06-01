@@ -1,0 +1,118 @@
+*
+  margin: 0
+
+html, 
+body 
+  height: 100vh
+  font-family: 'Roboto'
+  background-color: var(--color_7)
+
+body
+  display: flex
+  flex-direction: column
+  align-items: center
+
+*::-webkit-scrollbar 
+  width: 6px !important
+  height: 6px !important
+
+*::-webkit-scrollbar-thumb 
+  background-color: rgba(0,0,0,0.2)
+
+*::-webkit-scrollbar-track 
+  background: rgba(255,255,255,0.08)
+
+input
+  border: 0
+
+.center
+  text-align: center
+  
+.right
+  text-align: right
+
+.btn
+  text-decoration: none
+  width: 100%
+  font-size: 16px
+  text-align: center
+  cursor: pointer
+  color: var(--color_text)
+  background-color: var(--color_btn)
+  letter-spacing: .5px
+  border-radius: 2px
+  padding: 1rem 0
+  display: inline-block
+  &:hover
+    background-color: var(--color_btn_hover)
+
+.btn-behind
+  position: absolute
+  top: -80px
+  left: -80px
+  z-index: 1
+  width: 160px
+  height: 160px
+  background-color: var(--color_6)
+  border: 5px solid var(--color_5)
+  padding: 0
+  border-radius: 50%
+  cursor: pointer
+  i 
+    position: absolute
+    font-size: 39px
+    top: 85px
+    left: 85px
+    color: var(--color_text)
+
+.red
+  background-color: var(--color_exit)
+  &:hover
+    background-color: var(--color_exit_hover)
+
+.content
+  width: 90vw
+  max-width: 900px
+  background-color: #fff
+  border-top: 20px solid var(--color_4)
+  border-radius: 10px
+  box-shadow: var(--shadow_2_box)
+  table
+    width: calc(100% - 40px)
+    border-collapse: collapse
+    margin: 20px
+    th
+      padding-bottom: 20px
+    tr td:nth-child(1)
+      width: 50%
+  p
+    margin-left: 30px
+    font-size: 22px
+    color: #444
+  .center p 
+    margin: 0
+  img
+    width: calc(100% - 60px)
+    margin: 30px
+  img.img-user
+    width: 30%
+    max-width: 140px
+  .inp, textarea
+    border: 1px solid darkgray
+    border-radius: 5px 
+  .inp
+    width: calc(90% - 20px)
+    margin: 0 5% 20px 5%
+    box-shadow: var(--shadow_1_box)
+    background: linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5) 
+    color: #555 
+    font-size: inherit 
+    padding: 5px 10px
+    text-overflow: ellipsis
+    white-space: nowrap
+  textarea
+    width: calc(100% - 5%)
+    height: 200px
+    max-height: calc(100vh - 500px)
+    resize: vertical
+    margin: 0 2.5% 20px 2.5%

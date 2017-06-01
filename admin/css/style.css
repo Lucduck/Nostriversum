@@ -1,0 +1,597 @@
+* {
+  margin: 0; }
+
+html,
+body {
+  height: 100vh;
+  font-family: "Roboto";
+  background-color: var(--color_7); }
+
+*::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important; }
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08); }
+
+input {
+  border: 0; }
+
+.btn {
+  text-decoration: none;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--color_text);
+  background-color: var(--color_btn);
+  letter-spacing: 0.5px;
+  border-radius: 2px;
+  padding: 1rem 0;
+  display: inline-block; }
+  .btn:hover {
+    background-color: var(--color_btn_hover); }
+
+.btn-conf {
+  padding: 0 1rem; }
+
+.btn-behind {
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  z-index: 1;
+  width: 160px;
+  height: 160px;
+  background-color: var(--color_6);
+  border: 5px solid var(--color_5);
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer; }
+  .btn-behind i {
+    position: absolute;
+    font-size: 39px;
+    top: 85px;
+    left: 85px;
+    color: var(--color_text); }
+
+.red {
+  background-color: var(--color_exit); }
+  .red:hover {
+    background-color: var(--color_exit_hover); }
+
+.inputRange {
+  width: 90%;
+  margin: 5%; }
+
+.input-text {
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  width: calc(90% - 20px);
+  margin: 0 5% 20px 5%;
+  box-shadow: var(--shadow_1_box);
+  background: linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  color: #555;
+  font-size: inherit;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.seperator {
+  width: 100%;
+  margin: 20px 0;
+  border-bottom: 4px solid var(--color_6); }
+
+span.btn-white i:nth-child(1) {
+  color: #fff;
+  text-shadow: var(--shadow_1_text); }
+span.btn-white i:nth-child(2) {
+  color: #000; }
+span.btn-white input {
+  position: absolute;
+  cursor: pointer;
+  background: none;
+  left: 0;
+  width: 42px;
+  height: 42px; }
+
+.form-icon {
+  padding-right: 52px;
+  position: relative; }
+  .form-icon .planet, .form-icon .satellite {
+    cursor: pointer;
+    font-size: 21px;
+    cursor: pointer;
+    color: var(--color_text);
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: transparent;
+    text-transform: capitalize; }
+    .form-icon .planet:hover, .form-icon .satellite:hover {
+      background-color: var(--color_5); }
+  .form-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    color: var(--color_text);
+    padding: 16px 17px;
+    transition: 0.4s; }
+    .form-icon button:hover {
+      background-color: var(--color_5); }
+
+.top {
+  position: relative;
+  background-color: var(--color_6);
+  height: 53px; }
+  .top span, .top select {
+    position: absolute;
+    bottom: 5px; }
+  .top select {
+    left: 53px; }
+  .top .add {
+    left: 5px; }
+  .top .reload {
+    right: 5px; }
+
+.fixed-chat-btn {
+  position: fixed;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 1000; }
+  .fixed-chat-btn button {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    background-color: var(--color_sphere_chat);
+    width: 56px;
+    height: 56px;
+    line-height: 54px;
+    display: inline-block;
+    color: var(--color_text);
+    border-radius: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    border: none; }
+
+.menu-top {
+  color: var(--color_text);
+  width: 100%;
+  min-height: 54px;
+  background: var(--color_1); }
+  .menu-top p, .menu-top i, .menu-top input {
+    text-shadow: var(--shadow_1_text); }
+  .menu-top input, .menu-top a {
+    box-shadow: var(--shadow_1_box); }
+  .menu-top > p {
+    width: 237px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px 5px; }
+    .menu-top > p strong {
+      letter-spacing: 0.5px; }
+    @media screen and (max-width: 533px) {
+      .menu-top > p {
+        display: none; } }
+  .menu-top > i {
+    float: left;
+    font-size: 43px;
+    color: var(--color_text);
+    padding: 5.5px 9px;
+    display: none; }
+    @media screen and (max-width: 533px) {
+      .menu-top > i {
+        display: block; } }
+  .menu-top .user {
+    height: 54px;
+    background: var(--color_3);
+    position: relative;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-left: 4px solid var(--color_5); }
+    .menu-top .user > img {
+      width: 43px;
+      height: 43px;
+      border-radius: 100px;
+      margin: 0 15px;
+      box-shadow: var(--shadow_1_box); }
+    .menu-top .user > p {
+      text-transform: capitalize; }
+    .menu-top .user .down-options {
+      padding: 5px 15px;
+      margin: 0 12px;
+      border: 2px solid var(--color_5);
+      background: var(--color_4);
+      cursor: pointer; }
+    .menu-top .user .options {
+      position: absolute;
+      top: 54px;
+      right: 0;
+      width: 100%;
+      background: var(--color_3);
+      border-bottom-left-radius: 5px;
+      display: none;
+      border-left: 4px solid var(--color_5);
+      border-bottom: 4px solid var(--color_5);
+      z-index: 2; }
+      .menu-top .user .options > div {
+        padding: 8px; }
+      .menu-top .user .options .exit .btn {
+        background-color: var(--color_exit);
+        padding: 0.2rem 0; }
+        .menu-top .user .options .exit .btn:hover {
+          background-color: var(--color_exit_hover); }
+
+.menu-left {
+  float: left;
+  overflow-y: scroll;
+  overflow-y: overlay;
+  background-color: var(--color_2);
+  color: var(--color_text);
+  width: 250px;
+  height: calc(100% - 94px);
+  padding: 20px; }
+  .menu-left * {
+    font-size: 18px;
+    text-shadow: var(--shadow_1_text); }
+  .menu-left button.accordion {
+    font-size: 21px;
+    cursor: pointer;
+    color: var(--color_text);
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: transparent; }
+    .menu-left button.accordion .fa:nth-child(2) {
+      float: right; }
+  .menu-left div.panel {
+    padding: 0 18px;
+    display: none; }
+    .menu-left div.panel .element {
+      color: var(--color_text);
+      cursor: pointer; }
+      .menu-left div.panel .element span {
+        color: var(--color_icon_square); }
+        .menu-left div.panel .element span i:nth-child(1) {
+          text-shadow: var(--shadow_1_text); }
+
+header {
+  font-family: "Montserrat Subrayada", sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../../img/estrellas.jpg);
+  background-position: top;
+  background-size: 100% auto;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  header > h1 {
+    font-size: calc(100vw / 17);
+    color: #fff;
+    text-shadow: 10px 10px 5px darkmagenta;
+    z-index: 6; }
+  header .planet-btm {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 7; }
+  header .planet {
+    position: absolute;
+    border-radius: 100vw; }
+  header #planet-red {
+    width: 31vw;
+    height: 31vw;
+    left: -13vw;
+    bottom: -4vh;
+    box-shadow: 0 0 100px 12px #784c66;
+    z-index: 5; }
+  header #planet-blue {
+    width: 19vw;
+    height: 19vw;
+    right: 30vw;
+    bottom: -1vh;
+    box-shadow: 0 0 100px 12px #4a3987;
+    z-index: 4; }
+  header #planet-green {
+    width: 15vw;
+    height: 15vw;
+    right: 6vh;
+    top: 23vh;
+    box-shadow: 0 0 100px 12px #346649;
+    z-index: 3; }
+  header #planet-purple {
+    width: 11vw;
+    height: 11vw;
+    left: 12vw;
+    top: 12vh;
+    box-shadow: 0 0 100px 12px #6c4a86;
+    z-index: 2; }
+  header #planet-skyBlue {
+    width: 7vw;
+    height: 7vw;
+    right: 29vw;
+    top: 1vh;
+    box-shadow: 0 0 100px 12px #032c4a;
+    z-index: 1; }
+
+.cont {
+  float: left;
+  overflow-y: scroll;
+  overflow: overlay;
+  width: calc(100% - 290px);
+  height: calc(100% - 54px); }
+
+.contentSettings {
+  height: 100%; }
+  .contentSettings .cardUser {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--color_6);
+    color: var(--color_text);
+    box-shadow: var(--shadow_1_box); }
+    .contentSettings .cardUser table {
+      width: 100%; }
+      .contentSettings .cardUser table td {
+        width: 50%; }
+    .contentSettings .cardUser img {
+      width: 80%;
+      margin: 10%;
+      border-radius: 50%;
+      box-shadow: var(--shadow_1_box); }
+    .contentSettings .cardUser p {
+      margin-left: 5%;
+      font-size: 22px; }
+    .contentSettings .cardUser select, .contentSettings .cardUser input:nth-child(2), .contentSettings .cardUser input:nth-child(4) {
+      width: 90%;
+      margin: 0 5% 20px 5%;
+      border-radius: 5px;
+      box-shadow: var(--shadow_1_box);
+      background: linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+      color: #555;
+      font-size: inherit;
+      padding: 5px 10px;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .contentSettings .cardUser input:nth-child(2), .contentSettings .cardUser input:nth-child(4) {
+      width: 85%; }
+    .contentSettings .cardUser .btn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-weight: bold;
+      border-top: 2px solid var(--color_btn_hover);
+      border-radius: 0; }
+
+.contentArticles .top span {
+  cursor: pointer; }
+.contentArticles table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 100px 10%;
+  box-shadow: var(--shadow_2_box);
+  border-radius: 10px;
+  overflow: hidden; }
+  .contentArticles table tr {
+    text-align: center;
+    border-bottom: 1px solid var(--color_5); }
+    .contentArticles table tr td {
+      background-color: #fff;
+      padding: 16px 0; }
+      .contentArticles table tr td span i:nth-child(1) {
+        color: var(--color_7); }
+    .contentArticles table tr td:nth-child(1) {
+      max-width: 12vw; }
+      .contentArticles table tr td:nth-child(1) p {
+        padding: 0 8px 8px; }
+    .contentArticles table tr img {
+      width: 100px; }
+  .contentArticles table tr:nth-child(1) {
+    background: var(--color_4);
+    color: var(--color_text);
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    padding: 0; }
+  .contentArticles table tr.log td:nth-child(1) {
+    min-width: 80px; }
+  .contentArticles table tr.log td {
+    padding: 0 5px; }
+
+.contentDocs {
+  height: 100%; }
+  .contentDocs .left {
+    overflow: scroll;
+    width: 30%;
+    height: 100%;
+    background-color: var(--color_6);
+    font-size: 13px;
+    float: left; }
+    .contentDocs .left a {
+      text-decoration: none;
+      color: #000; }
+      .contentDocs .left a:hover {
+        text-decoration: underline; }
+  .contentDocs .content {
+    width: 70%;
+    height: 100%;
+    float: right; }
+
+body > .cont .contentPlanets .planets li {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.inputRangeScale {
+  width: 30%;
+  margin: 10px 5%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.contentPlanets {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-color: #191d2d; }
+  .contentPlanets .planets {
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contentPlanets .planets .solarSystem {
+      padding: 0;
+      position: relative;
+      height: 0;
+      width: 0; }
+      .contentPlanets .planets .solarSystem > *:before {
+        content: "";
+        position: absolute;
+        border-radius: 4000px; }
+      .contentPlanets .planets .solarSystem li {
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        border: 2px solid #394057;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; }
+        .contentPlanets .planets .solarSystem li span {
+          display: block;
+          position: absolute;
+          border-radius: 50%; }
+  .contentPlanets .list .planet, .contentPlanets .list .satellite, .contentPlanets .settings .planet, .contentPlanets .settings .satellite {
+    cursor: pointer;
+    font-size: 21px;
+    cursor: pointer;
+    color: var(--color_text);
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: transparent;
+    text-transform: capitalize; }
+    .contentPlanets .list .planet:hover, .contentPlanets .list .satellite:hover, .contentPlanets .settings .planet:hover, .contentPlanets .settings .satellite:hover {
+      background-color: var(--color_5); }
+  .contentPlanets .list {
+    background-color: var(--color_6);
+    min-width: 200px;
+    max-height: 100%;
+    position: absolute;
+    border-left: 4px solid var(--color_5);
+    overflow-y: scroll;
+    overflow: overlay;
+    right: 0; }
+    .contentPlanets .list .form-icon {
+      padding-right: 52px;
+      position: relative; }
+    .contentPlanets .list form .planet, .contentPlanets .list div.form-icon .planet {
+      cursor: pointer;
+      font-size: 21px;
+      cursor: pointer;
+      color: var(--color_text);
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      background-color: transparent;
+      text-transform: capitalize; }
+      .contentPlanets .list form .planet:hover, .contentPlanets .list div.form-icon .planet:hover {
+        background-color: var(--color_5); }
+    .contentPlanets .list form button, .contentPlanets .list div.form-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 24px;
+      color: var(--color_text);
+      padding: 16px 17px;
+      transition: 0.4s; }
+      .contentPlanets .list form button:hover, .contentPlanets .list div.form-icon button:hover {
+        background-color: var(--color_5); }
+  .contentPlanets .settings {
+    background-color: var(--color_6);
+    border-left: 4px solid var(--color_5);
+    width: 50%;
+    max-width: 650px;
+    height: 100%;
+    position: absolute;
+    overflow-y: scroll;
+    overflow: overlay;
+    right: 0;
+    padding-right: 17px; }
+    .contentPlanets .settings h1 {
+      text-transform: capitalize;
+      text-align: center;
+      color: var(--color_text);
+      font-size: 5vw;
+      margin-bottom: 40px; }
+    .contentPlanets .settings p {
+      color: var(--color_text);
+      font-size: 20px;
+      margin-left: 40px; }
+    .contentPlanets .settings div.image {
+      width: 100%;
+      margin-top: 20px;
+      padding-bottom: 20px; }
+      .contentPlanets .settings div.image img, .contentPlanets .settings div.image input {
+        color: var(--color_text);
+        width: 60%;
+        margin: 0 20%; }
+    .contentPlanets .settings input.color {
+      height: 54px;
+      padding: 0; }
+    .contentPlanets .settings input.number {
+      text-align: center;
+      width: 50%;
+      font-size: 20px;
+      margin: 5%;
+      border-radius: 4px; }
+    .contentPlanets .settings .text {
+      width: 80%;
+      height: 200px;
+      margin: 10%;
+      text-align: justify;
+      resize: vertical;
+      border: 0;
+      padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

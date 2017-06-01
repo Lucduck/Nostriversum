@@ -1,0 +1,165 @@
+* {
+  margin: 0; }
+
+html,
+body {
+  height: 100vh;
+  font-family: "Roboto";
+  background-color: #eee; }
+
+input {
+  border: 0; }
+
+.separador {
+  width: 100%;
+  height: 2px;
+  background-color: #333; }
+
+.btn {
+  text-decoration: none;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--color_text);
+  background-color: var(--color_btn);
+  letter-spacing: 0.5px;
+  border-radius: 2px;
+  padding: 1rem 0;
+  display: inline-block; }
+  .btn:hover {
+    background-color: var(--color_btn_hover); }
+
+.btn-conf {
+  padding: 0 1rem; }
+
+.fixed-chat-btn {
+  position: fixed;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 1; }
+  .fixed-chat-btn a {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    background-color: var(--color_sphere_chat);
+    width: 56px;
+    height: 56px;
+    line-height: 54px;
+    display: inline-block;
+    color: var(--color_text);
+    border-radius: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center; }
+
+.menu-top {
+  color: var(--color_text);
+  width: 100%;
+  min-height: 54px;
+  background: var(--color_1); }
+  .menu-top p, .menu-top i, .menu-top input {
+    text-shadow: var(--shadow_2_text); }
+  .menu-top input, .menu-top a {
+    box-shadow: var(--shadow_2_text); }
+  .menu-top > p {
+    width: 234px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px 5px; }
+    .menu-top > p strong {
+      letter-spacing: 0.5px; }
+    @media screen and (max-width: 533px) {
+      .menu-top > p {
+        display: none; } }
+  .menu-top > i {
+    float: left;
+    font-size: 43px;
+    color: var(--color_text);
+    padding: 5.5px 9px;
+    display: none; }
+    @media screen and (max-width: 533px) {
+      .menu-top > i {
+        display: block; } }
+  .menu-top .user {
+    height: 54px;
+    background: var(--color_3);
+    position: relative;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-left: 4px solid var(--color_5); }
+    .menu-top .user > img {
+      width: 43px;
+      height: 43px;
+      border-radius: 100px;
+      margin: 0 15px;
+      box-shadow: var(--shadow_2_box); }
+    .menu-top .user .down-options {
+      padding: 5px 15px;
+      margin: 0 12px;
+      border: 2px solid var(--color_5);
+      background: var(--color_4);
+      cursor: pointer; }
+    .menu-top .user .options {
+      position: absolute;
+      top: 54px;
+      right: 0;
+      width: 100%;
+      background: var(--color_3);
+      border-bottom-left-radius: 5px;
+      display: none;
+      border-left: 4px solid var(--color_5);
+      border-bottom: 4px solid var(--color_5);
+      z-index: 2; }
+      .menu-top .user .options > div {
+        padding: 8px; }
+      .menu-top .user .options .exit .btn {
+        background-color: var(--color_exit);
+        padding: 0.2rem 0; }
+        .menu-top .user .options .exit .btn:hover {
+          background-color: var(--color_exit_hover); }
+
+.menu-left {
+  float: left;
+  overflow-y: overlay;
+  background-color: var(--color_2);
+  color: var(--color_text);
+  width: 250px;
+  height: calc(100% - 94px);
+  padding: 20px; }
+  .menu-left * {
+    font-size: 18px;
+    text-shadow: var(--shadow_2_text); }
+  .menu-left button.accordion {
+    font-size: 21px;
+    cursor: pointer;
+    color: var(--color_text);
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: transparent; }
+    .menu-left button.accordion .fa:nth-child(2) {
+      float: right; }
+  .menu-left div.panel {
+    padding: 0 18px;
+    display: none; }
+    .menu-left div.panel .element {
+      color: var(--color_text);
+      cursor: pointer; }
+      .menu-left div.panel .element span {
+        color: var(--color_icon_square); }
+        .menu-left div.panel .element span i:nth-child(1) {
+          text-shadow: var(--shadow_1_text); }
+
+.content {
+  float: left;
+  overflow: overlay;
+  width: calc(100% - 290px);
+  height: calc(100% - 54px); }
+
+/*# sourceMappingURL=style.css.map */

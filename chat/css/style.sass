@@ -1,0 +1,137 @@
+*
+  margin: 0
+
+html, 
+body 
+  height: 100vh
+  font-family: 'Roboto'
+  background-color: #fff
+
+*::-webkit-scrollbar 
+  width: 6px !important
+  height: 6px !important
+
+*::-webkit-scrollbar-thumb 
+  background-color: rgba(0,0,0,0.2)
+
+*::-webkit-scrollbar-track 
+  background: rgba(255,255,255,0.08)
+
+
+.menu_top
+  width: 100%
+  background-color: var(--color_1)
+  div, button, form
+    cursor: pointer
+    width: 50vw
+    font-size: 33px
+    text-align: center
+    display: table-cell
+    color: var(--color_text)
+    background-color: transparent
+    border-right: 2px solid var(--color_5)
+    padding: 10px 0
+    &:hover
+      background-color: var(--color_4)
+  form 
+    padding: 0
+    &.exit, button
+      width: 60px
+      border: none
+
+.cont
+  width: 100%
+  .block
+    padding: 10px 0
+    cursor: pointer
+    display: flex
+    flex-direction: row
+    align-items: center
+    background-color: transparent
+    width: 100%
+    text-align: left
+    border: none
+    font-family: 'Roboto'
+    font-size: 16px
+    &:hover
+      background-color: var(--color_7)
+    img
+      width: 43px
+      height: 43px
+      border-radius: 50%
+    .image
+      height: 43px
+      padding: 0 10px
+    .block-body
+      width: 100%
+      padding: 4px 10px 4px 0
+      border-bottom: 1px solid var(--color_7)
+      .name
+        text-transform: capitalize
+      .date, .new
+        float: right
+      .new
+        background-color: var(--color_btn)
+        padding: 0 13px
+        border-radius: 30px
+        color: var(--color_text)
+
+.body-chat
+  background-image: url(../img/pattern_space.png)
+  background-size: 300px
+
+.cont-conversation
+  height: calc(100% - 99px - 47px)
+  overflow-y: scroll
+  overflow: overlay
+  padding-top: 20px
+  padding-bottom: 20px
+  background-color: rgba(255, 255, 255, 0.9)
+  display: flex
+  flex-direction: column
+  align-items: center
+  .he, .you
+    max-width: 70%
+    padding: 5px 8px
+    margin: 2px 18px
+    box-shadow: var(--shadow_2_box)
+    border-radius: 5px
+    margin-left: 5%
+    margin-right: 5%
+  .he
+    align-self: flex-start
+    background-color: #fff
+  .you
+    color: #fff
+    align-self: flex-end
+    background-color: #817cce
+    text-align: right
+  .date
+    color: #444
+    font-size: 11px
+
+.new
+  padding: 5px
+  background-color: var(--color_5)
+  position: relative
+  #mensaje
+    width: calc(100% - 100px)
+    padding: 0 10px
+    height: 31px
+    border-radius: 5px
+    border: none
+  button
+    width: 75px
+    height: 37px
+    border-radius: 5px
+    border: none
+    cursor: pointer
+  #scroll-down
+    position: absolute
+    top: -51px
+    right: 11px
+    padding: 10.5px 12.57px
+    background-color: rgba(51, 51, 51, 0.9)
+    color: rgb(255, 255, 255)
+    border-radius: 50%
+    cursor: pointer

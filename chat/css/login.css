@@ -1,0 +1,59 @@
+html, body{
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: rgb(242, 242, 242);
+}
+body > div{
+  background: #fff;
+  border-top: 40px solid #d32f2f;
+  padding-top: 14px;
+  border-radius: 5px;
+}
+body label{
+  color: #000 !important;
+}
+.title_log_normal{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px;
+  margin-bottom: 15px;
+}
+.title_log_small{
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px;
+}
+p{
+  line-height: 1;
+  margin: 0 6px;
+}
+.button_s6{
+  width: 100%
+}
+.confirm{
+  text-align: center;
+}
+.icon_center_big{
+  text-align: center;
+  font-size: 30px;
+  color: #26a69a;
+}
+.btn-large{
+  width: 100%;
+  min-width: 133px;
+}
+.error{
+  color: red
+}
+.btn-large, input{
+  padding: 0 !important;
+}
+input{
+  width: 100%;
+  height: 100%;
+}
