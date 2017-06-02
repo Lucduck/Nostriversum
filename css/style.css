@@ -359,13 +359,101 @@ header > h1{
   background: rgb(248, 247, 246);
 }
 .aboutMe{
+  position: relative;
   height: 100vh;
-  background: #fff;
-}
+  background: var(--color_7);
+  background-image: url(../img/as_space.png);
+  background-size: 50%;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: justify;}
+  .aboutMe .moon{
+    position: absolute;
+    width: 20%;
+    left: 10%;
+    bottom: 18%;}
+  .aboutMe .content{
+    max-width: calc(100% - 70px);
+    width: 400px;
+    position: relative;
+    padding: 25px;
+    background-color: var(--color_7);
+    border: 10px solid var(--color_6);
+    border-radius: 12px;
+    box-shadow: var(--shadow_2_box);}
+    .aboutMe .content .p-blue{
+      position: absolute;
+      width: 18%;
+      right: -14%;
+      bottom: 0%;}
+    .aboutMe .content h1{
+      position: absolute;
+      top: -61px;
+      font-size: 49px;
+      left: 2px;}
+
 .contact{
   height: 100vh;
-  background: #125;
-}
+  background: #363442;
+  background-image: url(../img/cohete.png);
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;}
+  .contact a{
+    text-decoration: none;}
+  .contact a:nth-child(1) i:nth-child(1){
+    text-shadow: 0 0 12px #784c66;
+    color: #ffbf5b;}
+  .contact a:nth-child(1) i:nth-child(2){
+    color: #ff633a;}
+  .contact a:nth-child(2) i:nth-child(1){
+    text-shadow: 0 0 12px #346649;
+    color: #85ff5e;}
+  .contact a:nth-child(2) i:nth-child(2){
+    color: #2e9506;}
+  .contact span{
+    font-size: 30px;}
+  .contact p{
+    box-shadow: 0 0 12px #ff1d99;
+    background-color: #ff1d99;
+    font-size: 24px;
+    color: #8e004e;
+    cursor: pointer;
+    margin-top: 36px;
+    padding: 17px;
+    border-radius: 50px;}
+
 .parallax{
   position: relative;
   display: -ms-flexbox;
@@ -374,6 +462,7 @@ header > h1{
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  z-index: 1;
 }
 #pr-space-1 > .window-space{
   background-image: url(../img/estrellas3.jpg);

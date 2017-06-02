@@ -78,13 +78,17 @@
 	</div>
 
 	<div id="aboutMe" class="aboutMe section">
-		<h1>SOBRE MI</h1>
-		<p>Soy Lucas Pérez, programador web. Hace unos años empece a estudiar programación, ahora acabo y hago esta pagina para el proyecto de final de curso.</p>
-		<br>
-		<p>Nostriversum es una pagina donde una persona podrá aprender y entretenerse con la información del sistema solar que contiene.</p>
-		<p>Las personas que gestionamos esta pagina, iremos actualizándola y gestionándola para que todas las personas que estén interesadas en todo este tema, estén informadas con la actualidad.</p>
-		<br>
-		<p>Espero que os guste esta pagina web, que sigáis aprendiendo y que tengáis ganas de descubrir y conocer mas.</p>
+		<img class='moon' src="img/moon.png">
+		<div class="content">
+			<img class='p-blue' src="img/bblue.png">
+			<h1>SOBRE MI</h1>
+			<p>Soy Lucas Pérez, programador web. Hace unos años empece a estudiar programación, ahora acabo y hago esta pagina para el proyecto de final de curso.</p>
+			<br>
+			<p>Nostriversum es una pagina donde una persona podrá aprender y entretenerse con la información del sistema solar que contiene.</p>
+			<p>Las personas que gestionamos esta pagina, iremos actualizándola y gestionándola para que todas las personas que estén interesadas en todo este tema, estén informadas con la actualidad.</p>
+			<br>
+			<p>Espero que os guste esta pagina web, que sigáis aprendiendo y que tengáis ganas de descubrir y conocer mas.</p>
+		</div>
 	</div>
 
 	<div id="pr-space-2" class="parallax section">
@@ -93,7 +97,21 @@
 	</div>
 
 	<div id="contact" class="contact section">
-
+		<div>
+			<a href="https://github.com/Lucduck">
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+			<a href="https://codepen.io/Luduck/">
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-codepen fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+		</div>
+		<p>Lucas.infte@gmail.com</p>
 	</div>
 </body>
 
